@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: indigo;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+
+.pacing-arrow {
+    color:yellow;
+    width:100px;
+    height:100px;
+    display: flex;
+    background: 
+      linear-gradient(currentColor 0 0) center/calc(100% - 30px) 10px,
+      conic-gradient(from -136deg at right,#0000 ,currentColor 1deg 90deg,#0000 91deg) right/15px 100%,
+      conic-gradient(from   44deg at left ,#0000 ,currentColor 1deg 90deg,#0000 91deg) left /15px 100%;
+    background-repeat: no-repeat;
+    animation: a9 .5s infinite linear alternate;
+  }
+  
+  @keyframes a9 {
+    0%   {transform: translate(-30px)}
+    100% {transform: translate( 30px)}
+  }
